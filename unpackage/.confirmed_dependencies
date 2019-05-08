@@ -1,0 +1,30 @@
+{
+	"index.html": {
+		"refer": [
+			"game-review.html"
+		]
+	},
+	"game-review.html": {
+		"refer": [
+			"single-game-review.html",
+			"contact.html",
+			"index.html"
+		]
+	},
+	"single-game-review.html": {
+		"refer": [
+			"articles.html",
+			"contact.html"
+		]
+	},
+	"articles.html": {
+		"refer": [
+			"single-game-review.html"
+		]
+	},
+	"contact.html": {
+		"refer": [
+			"index.html"
+		]
+	}
+}

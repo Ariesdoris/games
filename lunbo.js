@@ -1,0 +1,30 @@
+$(function(){
+	var $lunIndex=0;
+	$(".right-btn").click(function(){
+		$lunIndex++;
+		if($lunIndex>10){
+			$lunIndex=10;
+		}
+		else{
+			$(".con-lunbo-div").css("left","-"+200*$lunIndex+"px")
+		}
+	})
+	$(".left-btn").click(function(){
+		$lunIndex--;
+		if($lunIndex<0){
+			$lunIndex=0;
+		}
+		else{
+			$(".con-lunbo-div").css("left","-"+200*$lunIndex+"px")
+		}
+	})
+	var $timer=setInterval(function(){
+		$lunIndex++;
+		if($lunIndex>10){
+			$lunIndex=10;
+		}
+		else{
+			$(".con-lunbo-div").css("left","-"+200*$lunIndex+"px")
+		}
+	},2000)
+})
